@@ -23,7 +23,7 @@ public class App {
         if (result == -1) {
             System.out.println("\nNo se encontro a la persona con la edad de 33");
         } else {
-            System.out.println("\nLa persona con la edad de 32 es la persona número " + result);
+            System.out.println("\nLa persona con la edad de 32 esta en la posicion: " + result);
         }
 
         // SELECCION Y BUSQUEDA POR ALTURA
@@ -46,7 +46,7 @@ public class App {
         if (result3 == -1) {
             System.out.println("\nNo se encontró la persona con la edad de 18");
         } else {
-            System.out.println("\nLa persona con la edad de 18 es la persona número " + result3);
+            System.out.println("\nLa persona con la edad de 18 esta en la posicion: " + result3);
         }
 
         // INSERCION Y BUSQUEDA POR ALTURA
@@ -79,12 +79,12 @@ public class App {
         // BURBUJA AJUSTE Y BUSQUEDA POR AÑO -- ASENDENTE
         mOB2.sortBYearWithBubbleAvnAsendente(carros);
 
-        int res = mOB2.searchBinaryByYear(carros, 2020);
+        int res = mOB2.searchBinaryByYear(carros, 2019);
 
         if (res == -1) {
-            System.out.println("No se encontro el carro con el año 2020");
+            System.out.println("\nNo se encontro el carro con el año 2020");
         } else {
-            System.out.println("Se encontro el carro con el año 2020 en la posicion:" + res);
+            System.out.println("\nSe encontro el carro con el año 2020 en la posicion:" + res);
         }
     }
 }

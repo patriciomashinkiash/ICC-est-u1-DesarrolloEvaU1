@@ -19,9 +19,9 @@ public class MetodosOrdenamientoBusquedaGrupoB {
             boolean inter = false;
             for (int j = 0; j < n - i - 1; j++) {
                 if (carro[j].getYear() > carro[j + 1].getYear()) {
+                    Carro temp = carro[j];
                     carro[j] = carro[j + 1];
-                    carro[j + 1] = carro[j];
-                    inter = true;
+                    carro[j + 1] = temp;
                 }
             }
 
@@ -51,11 +51,11 @@ public class MetodosOrdenamientoBusquedaGrupoB {
             }
 
             if (carro[mitad].getYear() < year) {
-                left = mitad - 1;
+                left = mitad + 1;
             }
 
             else {
-                right = mitad + 1;
+                right = mitad - 1;
             }
 
         }
